@@ -1,0 +1,40 @@
+.container {
+    width: px2rem(690px);
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: px2rem(750px);
+    margin: 0 auto;
+}
+
+.danlan-bg {
+    background: $danlan;
+}
+
+.blue-color {
+    background: $lan;
+}
+
+.tittle-con {
+   display: flex;
+   align-items: center;
+   margin: px2rem(40px) auto;
+
+    .tittle {
+        margin: px2rem(30px) auto;
+
+        span {
+            float: left;
+            width: px2rem(52px);
+            height: px2rem(47px);
+            background: url('../images/tittleqd.png') no-repeat center center;
+        }
+
+        h2 {
+            margin-left: px2rem(60px);
+            font: bold px2rem(48px) / 1em "Microsoft Yahei", sans-serif;
+            color: $shenlan;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.btn-primary {
+    display: block;
+    width: px2rem(300px);
+    height: px2rem(60px);
+    margin: px2rem(30px) auto;
+    background: $lan;
+    color: $bai;
+    border-radius: px2rem(10px);
+    font: px2rem(24px) / px2rem(60px) "Microsoft Yahei", sans-serif;
+    text-align: center;
+
+    &:hover {
+        background: $huang;
+        color: $lan;
+    }
+}
+
+.btn-kttime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: px2rem(400px);
+    height: px2rem(200px);
+
+    div {
+        display: block;
+        width: px2rem(250px);
+        height: px2rem(80px);
+        background: $huang;
+        font: px2rem(30px) / px2rem(80px) "Microsoft Yahei", sans-serif;
+        color: $lan;
+    }
+
+    &:hover {
+        div {
+            background: $lan;
+            color: $bai;
+        }
+    }
+}

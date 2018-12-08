@@ -1,0 +1,691 @@
+@charset "UTF-8";
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+a,
+img,
+input,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+table,
+tr,
+td,
+p {
+  border: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.container {
+  width: 9.2rem;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.danlan-bg {
+  background: #ccecfb;
+}
+
+.blue-color {
+  background: #00a0e9;
+}
+
+.tittle-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.53333rem auto;
+}
+
+.tittle-con .tittle {
+  margin: 0.4rem auto;
+}
+
+.tittle-con .tittle span {
+  float: left;
+  width: 0.69333rem;
+  height: 0.62667rem;
+  background: url("../images/tittleqd.png") no-repeat center center;
+}
+
+.tittle-con .tittle h2 {
+  margin-left: 0.8rem;
+  font: bold 0.64rem/1em "Microsoft Yahei", sans-serif;
+  color: #0068b7;
+}
+
+.my-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10rem;
+  height: 0.8rem;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.my-nav li {
+  display: block;
+  float: left;
+  font: 0.4rem/0.8rem "Microsoft Yahei", sans-serif;
+}
+
+.my-nav li a {
+  display: block;
+  height: 0.8rem;
+  padding: 0 0.26667rem;
+  color: #fff;
+}
+
+.my-nav .actived {
+  background: #fff100;
+  -webkit-box-shadow: 0 0 0.13333rem #939393 inset;
+          box-shadow: 0 0 0.13333rem #939393 inset;
+}
+
+.my-nav .actived a {
+  color: #00a0e9;
+}
+
+.banner {
+  width: 10rem;
+  height: 7.46667rem;
+  background: url("../images/banner.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.tab-content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.time-tab {
+  width: 600px;
+  margin: 0 auto 30px;
+}
+
+.time-tab li {
+  display: block;
+  float: left;
+  width: 290px;
+  height: 45px;
+  margin-right: 10px;
+  background: #e6e6e6;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.time-tab a {
+  font: 24px/ 45px "Microsoft Yahei", sans-serif;
+  color: #939393;
+}
+
+.time-tab .actived {
+  background: #00a0e9;
+  color: #fff;
+}
+
+.time-tab .actived a {
+  color: #fff;
+}
+
+.time-box {
+  float: left;
+  width: 192px;
+  margin-right: 10px;
+  height: 150px;
+  text-align: center;
+  background: #e6e6e6;
+  border-radius: 6px;
+}
+
+.time-box:last-child {
+  margin-right: 0;
+}
+
+.time-box h5 {
+  margin-top: 20px;
+  font: bold 17px / 1.5em "Microsoft Yahei", sans-serif;
+  color: #00a0e9;
+}
+
+.time-box p {
+  font: 16px / 1.9em "Microsoft Yahei", sans-serif;
+}
+
+.time-box a {
+  display: block;
+  width: 140px;
+  height: 30px;
+  margin: 0 auto;
+  background: #939393;
+  border-radius: 6px;
+  color: #fff;
+  font: 16px / 30px "Microsoft Yahei", sans-serif;
+}
+
+.time-box-hover {
+  background: #00a0e9;
+  color: #fff;
+}
+
+.time-box-hover h5 {
+  color: #fff;
+}
+
+.time-box-hover a {
+  background: #fff100;
+  color: #00a0e9;
+}
+
+.time-box-hover a:hover {
+  background: #ccc100;
+  color: #000;
+}
+
+.time-tab-wrapper .time-tab-items {
+  display: none;
+}
+
+.time-tab-wrapper .current {
+  display: block;
+}
+
+.schedule-tab {
+  width: 9.2rem;
+  margin: 0 auto;
+  font: 0.32rem/0.93333rem "Microsoft Yahei", sans-serif;
+  color: #939393;
+  text-align: center;
+}
+
+.schedule-tab li {
+  float: left;
+  width: 4.53333rem;
+  height: 0.93333rem;
+  margin-right: 0.13333rem;
+  background: #e6e6e6;
+  border-radius: 0.08rem 0.08rem 0 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0.06667rem #939393 inset;
+          box-shadow: 0 0 0.06667rem #939393 inset;
+}
+
+.schedule-tab li:last-child {
+  margin-right: 0;
+}
+
+.schedule-tab .actived {
+  -webkit-box-shadow: 0 -0.02667rem 0.06667rem #939393;
+          box-shadow: 0 -0.02667rem 0.06667rem #939393;
+  background: #00a0e9;
+  color: #fff;
+}
+
+.schedule-tab-content {
+  width: 9.2rem;
+  margin: 0 auto;
+}
+
+.schedule-tab-items {
+  display: none;
+}
+
+.schedule-tab-items table {
+  width: 9.2rem;
+  border: solid #00a0e9;
+  border-width: 0 0.02667rem 0.02667rem;
+  border-collapse: collapse;
+  text-align: center;
+  -webkit-box-shadow: 0 0.02667rem 0.06667rem #939393;
+          box-shadow: 0 0.02667rem 0.06667rem #939393;
+  font: 0.32rem/1.5em "Microsoft Yahei", sans-serif;
+}
+
+.schedule-tab-items table tr {
+  height: 0.66667rem;
+  border: 0.01333rem solid #00a0e9;
+}
+
+.schedule-tab-items table tr:first-child {
+  background: #00a0e9;
+  color: #fff;
+}
+
+.schedule-tab-items table tr:last-child > td {
+  padding-left: 0.26667rem;
+  background: #00a0e9;
+  color: #fff;
+  text-align: left;
+  line-height: 2em;
+}
+
+.schedule-tab-items table tr td {
+  padding: 0.06667rem;
+  border: 0.01333rem solid #00a0e9;
+}
+
+.schedule-tab-items table tr td:first-child {
+  width: 12%;
+}
+
+.schedule-tab-items table tr td:nth-child(2) {
+  width: 20%;
+}
+
+.schedule-tab-items table tr td:nth-child(3) {
+  width: 45%;
+  text-align: left;
+}
+
+.current {
+  display: block;
+}
+
+.btn-primary {
+  display: block;
+  width: 4rem;
+  height: 0.8rem;
+  margin: 0.4rem auto;
+  background: #00a0e9;
+  color: #fff;
+  border-radius: 0.13333rem;
+  font: 0.32rem/0.8rem "Microsoft Yahei", sans-serif;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background: #fff100;
+  color: #00a0e9;
+}
+
+.btn-kttime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 5.33333rem;
+  height: 2.66667rem;
+}
+
+.btn-kttime div {
+  display: block;
+  width: 3.33333rem;
+  height: 1.06667rem;
+  background: #fff100;
+  font: 0.4rem/1.06667rem "Microsoft Yahei", sans-serif;
+  color: #00a0e9;
+}
+
+.btn-kttime:hover div {
+  background: #00a0e9;
+  color: #fff;
+}
+
+.liucheng {
+  display: block;
+  width: 8.93333rem;
+  height: 4.05333rem;
+}
+
+.jiage {
+  width: 5.6rem;
+  height: 0.53333rem;
+  margin: 0.53333rem auto;
+  font: 0.32rem/0.53333rem "Microsoft Yahei", sans-serif;
+  letter-spacing: 0.02667rem;
+  text-align: center;
+}
+
+.jiage em {
+  text-decoration: line-through;
+}
+
+.jiage-a {
+  background: #fff100;
+  color: #00a0e9;
+}
+
+.jiage-b {
+  background: #00a0e9;
+  color: #fff;
+}
+
+.charge-con {
+  width: 9.2rem;
+  margin: 0.66667rem auto;
+  font: 0.32rem/1.5em "Microsoft Yahei", sans-serif;
+}
+
+.charge-con span {
+  display: block;
+  width: 3.33333rem;
+  height: 0.53333rem;
+  font: bold 0.32rem/0.53333rem "Microsoft Yahei", sans-serif;
+  text-align: center;
+  border-radius: 0.08rem;
+  margin: 0.13333rem 0;
+}
+
+.charge-con .charge-con-left {
+  width: 9.2rem;
+}
+
+.charge-con .charge-con-left span {
+  background: #00a0e9;
+  color: #fff;
+}
+
+.charge-con .charge-con-right {
+  width: 9.2rem;
+}
+
+.charge-con .charge-con-right span {
+  background: #fff100;
+  color: #00a0e9;
+}
+
+.charge-con .charge-con-right p {
+  line-height: 2em;
+}
+
+/*弹框*/
+.form {
+  width: 100%;
+  height: 1.06667rem;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  left: 0;
+  bottom: 40px;
+  display: none;
+  z-index: 9;
+}
+
+.form .wrapper {
+  width: 9.2rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.form .wrapper .ren {
+  width: 1.90667rem;
+  height: 2.48rem;
+  display: block;
+  position: absolute;
+  top: -1.56rem;
+  left: -1.86667rem;
+}
+
+.form .wrapper .kuang {
+  display: block;
+  float: left;
+  width: 2.66667rem;
+  margin-right: 0.14667rem;
+  height: 0.66667rem;
+  border: 0.01333rem solid #7a7a7a;
+  font-size: 0.29333rem;
+  text-indent: 0.16rem;
+  margin-top: 0.2rem;
+}
+
+.form .wrapper .mingzi {
+  margin-left: 0.53333rem;
+}
+
+.form .wrapper .select {
+  position: relative;
+  width: 2.01333rem;
+  float: left;
+  height: 0.50667rem;
+  line-height: 0.50667rem;
+  border: 0.01333rem solid #ccc;
+  font-size: 0.18667rem;
+  cursor: pointer;
+  background-color: #fff;
+  margin-right: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.form .wrapper .select:after {
+  position: absolute;
+  right: 0.16rem;
+  top: 50%;
+  content: '';
+  width: 0.06667rem;
+  height: 0.06667rem;
+  border-bottom: 0.02667rem solid #aaa;
+  border-right: 0.02667rem solid #aaa;
+  margin-top: -0.05333rem;
+  -webkit-transform-origin: 66% 66%;
+  transform-origin: 66% 66%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.form .wrapper .select.open:after {
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.form .wrapper .select .current {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  text-indent: 12px;
+}
+
+.form .wrapper .select .list {
+  position: absolute;
+  top: -3.08rem;
+  left: -0.01333rem;
+  z-index: 10;
+  width: 100%;
+  max-height: 3.04rem;
+  border: 0.01333rem solid #ccc;
+  border-radius: 0.02667rem;
+  background-color: #fafafa;
+  color: #333;
+  overflow: auto;
+  display: none;
+}
+
+.form .wrapper .select .option {
+  padding-left: 0.2rem;
+}
+
+.form .wrapper .select .option:hover {
+  color: #fff;
+  background-color: #ffbb29;
+}
+
+.form .wrapper .select-one .list {
+  top: -1.54667rem;
+}
+
+.form .wrapper .sub-btn {
+  display: block;
+  float: left;
+  width: 2.24rem;
+  height: 0.66667rem;
+  border: none;
+  background-color: #ffbb29;
+  font-size: 0.29333rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 0.2rem;
+}
+
+.form .wrapper .guanbi {
+  width: 0.4rem;
+  height: 0.4rem;
+  display: block;
+  position: absolute;
+  top: -0.16rem;
+  right: -0.53333rem;
+  cursor: pointer;
+}
+
+.form .wrapper input:focus,
+.form .wrapper input:hover {
+  border-color: #ffbb29;
+}
+
+.form .wrapper .select:hover, .form .wrapper .select:active, .form .wrapper .select.open {
+  border-color: #ffbb29;
+}
+
+.form .wrapper .select:hover .list, .form .wrapper .select:active .list, .form .wrapper .select.open .list {
+  display: block;
+}
+
+/*预约成功弹窗*/
+.succeed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+}
+
+.succeed .opa {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .6;
+  -webkit-filter: opacity(60);
+          filter: opacity(60);
+}
+
+.succeed .alert-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -2.13333rem 0 0 -4rem;
+  padding: 0.8rem 0;
+  width: 8rem;
+  height: 2.66667rem;
+  background-color: #fff;
+  border-radius: 0.13333rem;
+}
+
+.succeed .alert-box .alert-icon {
+  position: absolute;
+  top: -0.33333rem;
+  right: -0.33333rem;
+  width: 0.66667rem;
+  height: 0.66667rem;
+  line-height: 0.61333rem;
+  border-radius: 50%;
+  background-color: #ffaf15;
+  font-size: 0.56rem;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.succeed .alert-box h4 {
+  font-size: 0.34667rem;
+  line-height: 0.66667rem;
+  text-align: center;
+}
+
+.succeed .alert-box p {
+  margin: 0.26667rem 0;
+  font-size: 0.32rem;
+  line-height: 0.48rem;
+  color: #333;
+  text-align: center;
+}
+
+.succeed .alert-box .link {
+  color: #355cab;
+}
+
+.succeed .alert-box .link a {
+  color: #355cab;
+  text-decoration: underline;
+}
+
+.footer {
+  width: 10rem;
+  padding: 0.4rem 0 2.4rem;
+  background: #00a0e9;
+  font: 0.32rem/1.5em "Microsoft Yahei", sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.youshi {
+  width: 9.2rem;
+  height: 4.66667rem;
+  margin: 0 auto;
+  background: url("../images/youshi.png") no-repeat center center;
+  background-size: cover;
+}
+
+.huigu {
+  width: 8.66667rem;
+  height: 8.24rem;
+  margin: 0 auto 0.8rem;
+  background: url("../images/huigu.jpg") no-repeat center center;
+  background-size: cover;
+}
+/*# sourceMappingURL=main.css.map */

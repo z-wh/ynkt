@@ -1,0 +1,66 @@
+.liucheng {
+    display: block;
+    width: px2rem(670px);
+    height: px2rem(304px);
+}
+
+.jiage {
+    width: px2rem(420px);
+    height: px2rem(40px);
+    margin: px2rem(40px) auto;
+    font: px2rem(24px) / px2rem(40px) "Microsoft Yahei", sans-serif;
+    letter-spacing: px2rem(2px);
+    text-align: center;
+
+    em {
+        text-decoration: line-through;
+    }
+}
+
+.jiage-a {
+    background: $huang;
+    color: $lan;
+}
+
+.jiage-b {
+    background: $lan;
+    color: $bai;
+}
+
+.charge-con {
+    width: px2rem(690px);
+    margin: px2rem(50px) auto;
+    font: px2rem(24px) / 1.5em "Microsoft Yahei", sans-serif;
+
+    span {
+        display: block;
+        width: px2rem(250px);
+        height: px2rem(40px);
+        font: bold px2rem(24px) / px2rem(40px) "Microsoft Yahei", sans-serif;
+        text-align: center;
+        border-radius: px2rem(6px);
+        margin: px2rem(10px) 0;
+    }
+
+    .charge-con-left {
+        width: px2rem(690px);
+
+        span {
+            background: $lan;
+            color: $bai;
+        }
+    }
+
+    .charge-con-right {
+        width: px2rem(690px);
+
+        span {
+            background: $huang;
+            color: $lan;
+        }
+
+        p {
+            line-height: 2em;
+        }
+    }
+}

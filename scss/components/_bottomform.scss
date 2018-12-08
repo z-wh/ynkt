@@ -1,0 +1,237 @@
+@charset "UTF-8";
+/*弹框*/
+.form {
+    width: 100%;
+    height: px2rem(80px);
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    bottom: 40px;
+    display: none;
+    z-index: 9;
+
+    .wrapper {
+        width: px2rem(690px);
+        margin: 0 auto;
+        position: relative;
+
+        .ren {
+            width: px2rem(143px);
+            height: px2rem(186px);
+            display: block;
+            position: absolute;
+            top: px2rem(-117px);
+            left: px2rem(-140px);
+        }
+
+        .kuang {
+            display: block;
+            float: left;
+            width: px2rem(200px);
+            margin-right: px2rem(11px);
+            height: px2rem(50px);
+            border: px2rem(1px) solid #7a7a7a;
+            font-size: px2rem(22px);
+            text-indent: px2rem(12px);
+            margin-top: px2rem(15px);
+        }
+
+        .mingzi {
+            margin-left: px2rem(40px);
+        }
+
+        .select {
+            position: relative;
+            width: px2rem(151px);
+            float: left;
+            height: px2rem(38px);
+            line-height: px2rem(38px);
+            border: px2rem(1px) solid #ccc;
+            font-size: px2rem(14px);
+            cursor: pointer;
+            background-color: #fff;
+            margin-right: px2rem(15px);
+            margin-top: px2rem(15px);
+
+            &:after {
+                position: absolute;
+                right: px2rem(12px);
+                top: 50%;
+                content: '';
+                width: px2rem(5px);
+                height: px2rem(5px);
+                border-bottom: px2rem(2px) solid #aaa;
+                border-right: px2rem(2px) solid #aaa;
+                margin-top: px2rem(-4px);
+                -webkit-transform-origin: 66% 66%;
+                -ms-transform-origin: 66% 66%;
+                -o-transform-origin: 66% 66%;
+                transform-origin: 66% 66%;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+                -webkit-transition: all 0.15s ease-in-out;
+                -o-transition: all 0.15s ease-in-out;
+                transition: all 0.15s ease-in-out;
+            }
+
+            &.open {
+                &:after {
+                    -webkit-transform: rotate(-135deg);
+                    -ms-transform: rotate(-135deg);
+                    -o-transform: rotate(-135deg);
+                    transform: rotate(-135deg);
+                }
+            }
+
+            .current {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 999;
+                width: 100%;
+                height: 100%;
+                color: #333;
+                text-indent: 12px;
+            }
+
+            .list {
+                position: absolute;
+                top: px2rem(-231px);
+                left: px2rem(-1px);
+                z-index: 10;
+                width: 100%;
+                max-height: px2rem(228px);
+                border: px2rem(1px) solid #ccc;
+                border-radius: px2rem(2px);
+                background-color: #fafafa;
+                color: #333;
+                overflow: auto;
+                display: none;
+            }
+
+            .option {
+                padding-left: px2rem(15px);
+
+                &:hover {
+                    color: #fff;
+                    background-color: #ffbb29;
+                }
+            }
+        }
+
+        .select-one {
+
+            .list {
+                top: px2rem(-116px);
+            }
+        }
+
+        .sub-btn {
+            display: block;
+            float: left;
+            width: px2rem(168px);
+            height: px2rem(50px);
+            border: none;
+            background-color: #ffbb29;
+            font-size: px2rem(22px);
+            font-weight: bold;
+            color: #fff;
+            margin-top: px2rem(15px);
+        }
+
+        .guanbi {
+            width: px2rem(30px);
+            height: px2rem(30px);
+            display: block;
+            position: absolute;
+            top: px2rem(-12px);
+            right: px2rem(-40px);
+            cursor: pointer;
+        }
+    }
+}
+
+.form .wrapper input:focus,
+.form .wrapper input:hover {
+    border-color: #ffbb29;
+}
+
+.form .wrapper .select:hover, .form .wrapper .select:active, .form .wrapper .select.open {
+    border-color: #ffbb29;
+}
+
+.form .wrapper .select:hover .list, .form .wrapper .select:active .list, .form .wrapper .select.open .list {
+    display: block;
+}
+
+/*预约成功弹窗*/
+.succeed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+
+    .opa {
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .6;
+        filter: opacity(60);
+    }
+
+    .alert-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: px2rem(-160px) 0 0 px2rem(-300px);
+        padding: px2rem(60px) 0;
+        width: px2rem(600px);
+        height: px2rem(200px);
+        background-color: #fff;
+        border-radius: px2rem(10px);
+
+        .alert-icon {
+            position: absolute;
+            top: px2rem(-25px);
+            right: px2rem(-25px);
+            width: px2rem(50px);
+            height: px2rem(50px);
+            line-height: px2rem(46px);
+            border-radius: 50%;
+            background-color: #ffaf15;
+            font-size: px2rem(42px);
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        h4 {
+            font-size: px2rem(26px);
+            line-height: px2rem(50px);
+            text-align: center;
+        }
+
+        p {
+            margin: px2rem(20px) 0;
+            font-size: px2rem(24px);
+            line-height: px2rem(36px);
+            color: #333;
+            text-align: center;
+        }
+
+        .link {
+            color: #355cab;
+
+            a {
+                color: #355cab;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+

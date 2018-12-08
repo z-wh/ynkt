@@ -1,0 +1,31 @@
+.my-nav {
+    display: flex;
+    width: px2rem(750px);
+    height: px2rem(60px);
+    margin: 0 auto;
+    justify-content: space-between;
+
+    li {
+        display: block;
+        float: left;
+        font: px2rem(30px) / px2rem(60px) "Microsoft Yahei", sans-serif;
+
+        a {
+            display: block;
+            height: px2rem(60px);
+            padding: 0 px2rem(20px);
+            color: $bai;
+        }
+    }
+
+    .actived {
+        background: $huang;
+        box-shadow: 0 0 px2rem(10px) $shenhui inset;
+
+        a {
+            color: $lan;
+        }
+    }
+}
+
+
