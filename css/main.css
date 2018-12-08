@@ -1,0 +1,646 @@
+@charset "UTF-8";
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+a,
+img,
+input,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+table,
+tr,
+td,
+p {
+  border: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.danlan-bg {
+  background: #ccecfb;
+}
+
+.blue-color {
+  background: #00a0e9;
+}
+
+.tittle-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px auto;
+}
+
+.tittle-con .tittle {
+  margin: 30px auto;
+}
+
+.tittle-con .tittle span {
+  float: left;
+  width: 52px;
+  height: 47px;
+  background: url("/images/tittleqd.png") no-repeat center center;
+}
+
+.tittle-con .tittle h2 {
+  margin-left: 60px;
+  font: bold 48px / 1em "Microsoft Yahei", sans-serif;
+  color: #0068b7;
+}
+
+.my-nav {
+  width: 730px;
+  padding: 0 10px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.my-nav li {
+  display: block;
+  float: left;
+  font: 24px / 60px "Microsoft Yahei", sans-serif;
+}
+
+.my-nav li a {
+  display: block;
+  height: 60px;
+  padding: 0 30px;
+  color: #fff;
+}
+
+.my-nav .actived {
+  background: #fff100;
+  -webkit-box-shadow: 0 0 10px #939393 inset;
+          box-shadow: 0 0 10px #939393 inset;
+}
+
+.my-nav .actived a {
+  color: #00a0e9;
+}
+
+.banner {
+  width: 100%;
+  height: 560px;
+  background: url("../images/banner.jpg") no-repeat top center;
+}
+
+.tab-content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.time-tab {
+  width: 600px;
+  margin: 0 auto 30px;
+}
+
+.time-tab li {
+  display: block;
+  float: left;
+  width: 290px;
+  height: 45px;
+  margin-right: 10px;
+  background: #e6e6e6;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.time-tab a {
+  font: 24px/ 45px "Microsoft Yahei", sans-serif;
+  color: #939393;
+}
+
+.time-tab .actived {
+  background: #00a0e9;
+  color: #fff;
+}
+
+.time-tab .actived a {
+  color: #fff;
+}
+
+.time-box {
+  float: left;
+  width: 192px;
+  margin-right: 10px;
+  height: 150px;
+  text-align: center;
+  background: #e6e6e6;
+  border-radius: 6px;
+}
+
+.time-box:last-child {
+  margin-right: 0;
+}
+
+.time-box h5 {
+  margin-top: 20px;
+  font: bold 17px / 1.5em "Microsoft Yahei", sans-serif;
+  color: #00a0e9;
+}
+
+.time-box p {
+  font: 16px / 1.9em "Microsoft Yahei", sans-serif;
+}
+
+.time-box a {
+  display: block;
+  width: 140px;
+  height: 30px;
+  margin: 0 auto;
+  background: #939393;
+  border-radius: 6px;
+  color: #fff;
+  font: 16px / 30px "Microsoft Yahei", sans-serif;
+}
+
+.time-box-hover {
+  background: #00a0e9;
+  color: #fff;
+}
+
+.time-box-hover h5 {
+  color: #fff;
+}
+
+.time-box-hover a {
+  background: #fff100;
+  color: #00a0e9;
+}
+
+.time-box-hover a:hover {
+  background: #ccc100;
+  color: #000;
+}
+
+.time-tab-wrapper .time-tab-items {
+  display: none;
+}
+
+.time-tab-wrapper .current {
+  display: block;
+}
+
+.schedule-tab {
+  width: 960px;
+  margin: 0 auto;
+  font: 24px / 70px "Microsoft Yahei", sans-serif;
+  color: #939393;
+  text-align: center;
+}
+
+.schedule-tab li {
+  float: left;
+  width: 470px;
+  height: 70px;
+  margin-right: 20px;
+  background: #e6e6e6;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #939393 inset;
+          box-shadow: 0 0 5px #939393 inset;
+}
+
+.schedule-tab li:last-child {
+  margin-right: 0;
+}
+
+.schedule-tab .actived {
+  -webkit-box-shadow: 0 -2px 5px #939393;
+          box-shadow: 0 -2px 5px #939393;
+  background: #00a0e9;
+  color: #fff;
+}
+
+.schedule-tab-content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.schedule-tab-items {
+  display: none;
+}
+
+.schedule-tab-items table {
+  width: 960px;
+  border: solid #00a0e9;
+  border-width: 0 2px 2px;
+  border-collapse: collapse;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 5px #939393;
+          box-shadow: 0 2px 5px #939393;
+}
+
+.schedule-tab-items table tr {
+  height: 50px;
+  border: 1px solid #00a0e9;
+}
+
+.schedule-tab-items table tr:first-child {
+  background: #00a0e9;
+  color: #fff;
+}
+
+.schedule-tab-items table tr:last-child > td {
+  padding-left: 20px;
+  background: #00a0e9;
+  color: #fff;
+  text-align: left;
+  line-height: 2em;
+}
+
+.schedule-tab-items table tr td {
+  padding: 5px;
+  border: 1px solid #00a0e9;
+}
+
+.schedule-tab-items table tr td:first-child {
+  width: 8%;
+}
+
+.schedule-tab-items table tr td:nth-child(2) {
+  width: 15%;
+}
+
+.schedule-tab-items table tr td:nth-child(3) {
+  width: 50%;
+  text-align: left;
+}
+
+.current {
+  display: block;
+}
+
+.btn-primary {
+  display: block;
+  width: 300px;
+  height: 60px;
+  margin: 30px auto;
+  background: #00a0e9;
+  color: #fff;
+  border-radius: 10px;
+  font: 24px / 60px "Microsoft Yahei", sans-serif;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background: #fff100;
+  color: #00a0e9;
+}
+
+.liucheng {
+  display: block;
+  width: 974px;
+  height: 122px;
+}
+
+.jiage {
+  width: 420px;
+  height: 40px;
+  margin: 20px auto;
+  font: 24px / 40px "Microsoft Yahei", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.jiage em {
+  text-decoration: line-through;
+}
+
+.jiage-a {
+  background: #fff100;
+  color: #00a0e9;
+}
+
+.jiage-b {
+  background: #00a0e9;
+  color: #fff;
+}
+
+.charge-con {
+  width: 900px;
+  margin: 50px auto;
+}
+
+.charge-con span {
+  display: block;
+  width: 250px;
+  height: 40px;
+  font: 24px / 40px "Microsoft Yahei", sans-serif;
+  text-align: center;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.charge-con .charge-con-left {
+  float: left;
+  width: 400px;
+}
+
+.charge-con .charge-con-left span {
+  background: #00a0e9;
+  color: #fff;
+}
+
+.charge-con .charge-con-right {
+  float: right;
+  width: 400px;
+}
+
+.charge-con .charge-con-right span {
+  background: #fff100;
+  color: #00a0e9;
+}
+
+.charge-con .charge-con-right p {
+  line-height: 2em;
+}
+
+/*弹框*/
+.form {
+  width: 100%;
+  height: 68px;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: none;
+  z-index: 9;
+}
+
+.form .wrapper {
+  width: 634px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.form .wrapper .ren {
+  width: 143px;
+  height: 186px;
+  display: block;
+  position: absolute;
+  top: -117px;
+  left: -140px;
+}
+
+.form .wrapper .kuang {
+  display: block;
+  float: left;
+  width: 200px;
+  margin-right: 11px;
+  height: 38px;
+  border: 1px solid #7a7a7a;
+  font-size: 15px;
+  text-indent: 12px;
+  margin-top: 15px;
+}
+
+.form .wrapper .mingzi {
+  margin-left: 40px;
+}
+
+.form .wrapper .select {
+  position: relative;
+  width: 151px;
+  float: left;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #fff;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.form .wrapper .select:after {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-bottom: 2px solid #aaa;
+  border-right: 2px solid #aaa;
+  margin-top: -4px;
+  -webkit-transform-origin: 66% 66%;
+  transform-origin: 66% 66%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.form .wrapper .select.open:after {
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.form .wrapper .select .current {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  text-indent: 12px;
+}
+
+.form .wrapper .select .list {
+  position: absolute;
+  top: -231px;
+  left: -1px;
+  z-index: 10;
+  width: 100%;
+  max-height: 228px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: #fafafa;
+  color: #333;
+  overflow: auto;
+  display: none;
+}
+
+.form .wrapper .select .option {
+  padding-left: 15px;
+}
+
+.form .wrapper .select .option:hover {
+  color: #fff;
+  background-color: #ffbb29;
+}
+
+.form .wrapper .select-one .list {
+  top: -116px;
+}
+
+.form .wrapper .sub-btn {
+  display: block;
+  float: left;
+  width: 168px;
+  height: 38px;
+  border: none;
+  background-color: #ffbb29;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.form .wrapper .guanbi {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  top: -12px;
+  right: -40px;
+  cursor: pointer;
+}
+
+.form .wrapper input:focus,
+.form .wrapper input:hover {
+  border-color: #ffbb29;
+}
+
+.form .wrapper .select:hover, .form .wrapper .select:active, .form .wrapper .select.open {
+  border-color: #ffbb29;
+}
+
+.form .wrapper .select:hover .list, .form .wrapper .select:active .list, .form .wrapper .select.open .list {
+  display: block;
+}
+
+/*预约成功弹窗*/
+.succeed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+}
+
+.succeed .opa {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .6;
+  -webkit-filter: opacity(60);
+          filter: opacity(60);
+}
+
+.succeed .alert-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -160px 0 0 -300px;
+  padding: 60px 0;
+  width: 600px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.succeed .alert-box .alert-icon {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  border-radius: 50%;
+  background-color: #ffaf15;
+  font-size: 42px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.succeed .alert-box h4 {
+  font-size: 26px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.succeed .alert-box p {
+  margin: 20px 0;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333;
+  text-align: center;
+}
+
+.succeed .alert-box .link {
+  color: #355cab;
+}
+
+.succeed .alert-box .link a {
+  color: #355cab;
+  text-decoration: underline;
+}
+
+.youshi {
+  width: 864px;
+  height: 350px;
+  margin: 0 auto;
+  background: url("../images/youshi.png") no-repeat center center;
+}
+
+.huigu {
+  width: 1000px;
+  height: 383px;
+  margin: 0 auto 60px;
+  background: url("../images/huigu.jpg") no-repeat center center;
+}
+/*# sourceMappingURL=main.css.map */

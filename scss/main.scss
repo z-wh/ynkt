@@ -1,0 +1,26 @@
+@import 'base/reset';
+@import 'base/variable';
+@import 'base/common';
+@import 'layout/nav';
+@import 'layout/banner';
+@import 'layout/time';
+@import 'layout/schedule';
+@import 'components/btn';
+@import 'layout/desc';
+@import 'components/bottomform';
+
+
+
+.youshi {
+    width: 864px;
+    height: 350px;
+    margin: 0 auto;
+    background: url('../images/youshi.png') no-repeat center center;
+}
+
+.huigu {
+    width: 1000px;
+    height: 383px;
+    margin: 0 auto 60px;
+    background: url('../images/huigu.jpg') no-repeat center center;
+}

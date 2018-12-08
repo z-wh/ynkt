@@ -1,0 +1,102 @@
+.tab-content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.time-tab {
+    width: 600px;
+    margin: 0 auto 30px;
+
+    li {
+        display: block;
+        float: left;
+        width: 290px;
+        height: 45px;
+        margin-right: 10px;
+        background: $danhui;
+        text-align: center;
+        border-radius: 6px;
+
+    }
+
+    a {
+        font: 24px/ 45px "Microsoft Yahei", sans-serif;
+        color: $shenhui;
+    }
+
+    .actived {
+        background: $lan;
+        color: $bai;
+
+        a {
+            color: $bai;
+        }
+    }
+
+}
+
+.time-box {
+    float: left;
+    width: 192px;
+    margin-right: 10px;
+    height: 150px;
+    text-align: center;
+    background: $danhui;
+    border-radius: 6px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    h5 {
+        margin-top: 20px;
+        font: bold 17px / 1.5em "Microsoft Yahei", sans-serif;
+        color: $lan;
+    }
+
+    p {
+        font: 16px / 1.9em "Microsoft Yahei", sans-serif;
+    }
+
+    a {
+        display: block;
+        width: 140px;
+        height: 30px;
+        margin: 0 auto;
+        background: $shenhui;
+        border-radius: 6px;
+        color: $bai;
+        font: 16px / 30px "Microsoft Yahei", sans-serif;
+    }
+}
+
+.time-box-hover {
+    background: $lan;
+    color: $bai;
+
+    h5 {
+        color: $bai;
+    }
+
+    a {
+        background: $huang;
+        color: $lan;
+
+        &:hover {
+            background: darken($huang, 10%);
+            color: $hei;
+        }
+    }
+}
+
+.time-tab-wrapper {
+
+    .time-tab-items {
+        display: none;
+
+    }
+
+    .current {
+        display: block;
+    }
+}

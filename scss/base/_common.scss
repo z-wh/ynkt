@@ -1,0 +1,40 @@
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.danlan-bg {
+    background: $danlan;
+}
+
+.blue-color {
+    background: $lan;
+}
+
+.tittle-con {
+   display: flex;
+   align-items: center;
+   margin: 40px auto;
+
+    .tittle {
+        margin: 30px auto;
+
+        span {
+            float: left;
+            width: 52px;
+            height: 47px;
+            background: url('/images/tittleqd.png') no-repeat center center;
+        }
+
+        h2 {
+            margin-left: 60px;
+            font: bold 48px / 1em "Microsoft Yahei", sans-serif;
+            color: $shenlan;
+        }
+    }
+}

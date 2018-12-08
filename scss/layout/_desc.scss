@@ -1,0 +1,67 @@
+.liucheng {
+    display: block;
+    width: 974px;
+    height: 122px;
+}
+
+.jiage {
+    width: 420px;
+    height: 40px;
+    margin: 20px auto;
+    font: 24px / 40px "Microsoft Yahei", sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+
+    em {
+        text-decoration: line-through;
+    }
+}
+
+.jiage-a {
+    background: $huang;
+    color: $lan;
+}
+
+.jiage-b {
+    background: $lan;
+    color: $bai;
+}
+
+.charge-con {
+    width: 900px;
+    margin: 50px auto;
+
+    span {
+        display: block;
+        width: 250px;
+        height: 40px;
+        font: 24px / 40px "Microsoft Yahei", sans-serif;
+        text-align: center;
+        border-radius: 6px;
+        margin: 10px 0;
+    }
+
+    .charge-con-left {
+        float: left;
+        width: 400px;
+
+        span {
+            background: $lan;
+            color: $bai;
+        }
+    }
+
+    .charge-con-right {
+        float: right;
+        width: 400px;
+
+        span {
+            background: $huang;
+            color: $lan;
+        }
+
+        p {
+            line-height: 2em;
+        }
+    }
+}

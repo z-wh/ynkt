@@ -1,0 +1,30 @@
+.my-nav {
+    width: 730px;
+    padding: 0 10px;
+    height: 60px;
+    margin: 0 auto;
+
+    li {
+        display: block;
+        float: left;
+        font: 24px / 60px "Microsoft Yahei", sans-serif;
+
+        a {
+            display: block;
+            height: 60px;
+            padding: 0 30px;
+            color: $bai;
+        }
+    }
+
+    .actived {
+        background: $huang;
+        box-shadow: 0 0 10px $shenhui inset;
+
+        a {
+            color: $lan;
+        }
+    }
+}
+
+

@@ -1,0 +1,16 @@
+.btn-primary {
+    display: block;
+    width: 300px;
+    height: 60px;
+    margin: 30px auto;
+    background: $lan;
+    color: $bai;
+    border-radius: 10px;
+    font: 24px / 60px "Microsoft Yahei", sans-serif;
+    text-align: center;
+
+    &:hover {
+        background: $huang;
+        color: $lan;
+    }
+}

@@ -1,0 +1,88 @@
+.schedule-tab {
+    width: 960px;
+    margin: 0 auto;
+    font: 24px / 70px "Microsoft Yahei", sans-serif;
+    color: $shenhui;
+    text-align: center;
+
+    li {
+        float: left;
+        width: 470px;
+        height: 70px;
+        margin-right: 20px;
+        background: $danhui;
+        border-radius: 6px 6px 0 0;
+        cursor: pointer;
+        box-shadow: 0 0 5px $shenhui inset;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .actived {
+        box-shadow: 0 -2px 5px $shenhui;
+        background: $lan;
+        color: $bai;
+    }
+
+}
+
+.schedule-tab-content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.schedule-tab-items {
+    display: none;
+
+    table {
+        width: 960px;
+        border: solid $lan;
+        border-width: 0 2px 2px;
+        border-collapse: collapse;
+        text-align: center;
+        box-shadow: 0 2px 5px $shenhui;
+
+        tr {
+            height: 50px;
+            border: 1px solid $lan;
+
+            &:first-child {
+                background: $lan;
+                color: $bai;
+            }
+
+            &:last-child>td {
+                padding-left: 20px;
+                background: $lan;
+                color: $bai;
+                text-align: left;
+                line-height: 2em;
+            }
+
+            td {
+                padding: 5px;
+                border: 1px solid $lan;
+
+                &:first-child {
+                    width: 8%;
+                }
+
+                &:nth-child(2) {
+                    width: 15%;
+                }
+
+                &:nth-child(3) {
+                    width: 50%;
+                    text-align: left;
+                }
+            }
+        }
+
+    }
+
+}
+        .current {
+            display: block;
+        }
