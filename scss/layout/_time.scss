@@ -36,10 +36,10 @@
 }
 
 .time-box {
-    float: left;
-    width: 192px;
-    margin-right: 10px;
     height: 150px;
+    padding: 0 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     text-align: center;
     background: $danhui;
     border-radius: 6px;
@@ -97,6 +97,8 @@
     }
 
     .current {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
