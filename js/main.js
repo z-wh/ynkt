@@ -1,8 +1,8 @@
 $(function () {
     // 表单提交
-    $('.form').listenForm({
+    $('.form-two').listenForm({
         siteId: 13,
-        contentName: '越南考团m',
+        contentName: '越南考团msem',
         submitTarget: '#submitBtn2',
         successFun: function () {
             alert('您已成功提交！我们将在1个工作日内与您取得联系！谢谢！');
@@ -60,7 +60,7 @@ function fixNav() {
             $(".blue-color").css({
                 "position": "fixed",
                 "width": "100%",
-                "top": "40px",
+                "top": "0",
                 "background": "#0068b7",
                 "z-index": "9",
                 "opacity": "0.9",
