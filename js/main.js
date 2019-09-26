@@ -1,7 +1,16 @@
 $(function () {
+    // 表单提交
+    $('.form').listenForm({
+        siteId: 13,
+        contentName: '越南考团m',
+        submitTarget: '#submitBtn2',
+        successFun: function () {
+            alert('您已成功提交！我们将在1个工作日内与您取得联系！谢谢！');
+        }
+    });
 
     // nav点击跳转
-    $(".my-nav li").on("click", function(){
+    $(".my-nav li").on("click", function () {
         var index = $(this).index();
         $(this).addClass("actived").siblings().removeClass("actived");
         $obj = $(".tittle");
@@ -9,7 +18,7 @@ $(function () {
     });
 
     // 考团时间点击切换
-    $(".time-tab li").on("click", function(){
+    $(".time-tab li").on("click", function () {
         var index = $(this).index();
         $(this).addClass("actived").siblings().removeClass("actived");
         $(".time-tab-wrapper .time-tab-items").eq(index).addClass("current").siblings().removeClass("current");
@@ -17,7 +26,7 @@ $(function () {
     });
 
     // 行程安排切换
-    $(".schedule-tab li").on("click",function(){
+    $(".schedule-tab li").on("click", function () {
         var index = $(this).index();
         $(this).addClass("actived").siblings().removeClass("actived");
         $(".schedule-tab-content .schedule-tab-items").eq(index).addClass("current").siblings().removeClass("current");
@@ -51,7 +60,7 @@ function fixNav() {
             $(".blue-color").css({
                 "position": "fixed",
                 "width": "100%",
-                "top": "0",
+                "top": "40px",
                 "background": "#0068b7",
                 "z-index": "9",
                 "opacity": "0.9",
