@@ -1,8 +1,17 @@
 $(function () {
+    // 表单提交
+    $('.form-two').listenForm({
+        siteId: 16,
+        contentName: '越南考团报名',
+        submitTarget: '#submitBtn2',
+        successFun: function () {
+            alert('您已成功提交！我们将在1个工作日内与您取得联系！谢谢！');
+        }
+    });
 
     fixNav();
     // nav点击跳转
-    $(".my-nav li").on("click", function(){
+    $(".my-nav li").on("click", function () {
         var index = $(this).index();
         $(this).addClass("actived").siblings().removeClass("actived");
         $obj = $(".tittle");
@@ -10,7 +19,7 @@ $(function () {
     });
 
     // 考团时间点击切换
-    $(".time-tab li").on("click", function(){
+    $(".time-tab li").on("click", function () {
         var index = $(this).index();
         $(this).addClass("actived").siblings().removeClass("actived");
         $(".time-tab-wrapper .time-tab-items").eq(index).addClass("current").siblings().removeClass("current");
@@ -18,7 +27,7 @@ $(function () {
     });
 
     // 行程安排切换
-    $(".schedule-tab li").on("click",function(){
+    $(".schedule-tab li").on("click", function () {
         var index = $(this).index();
         $(this).addClass("actived").siblings().removeClass("actived");
         $(".schedule-tab-content .schedule-tab-items").eq(index).addClass("current").siblings().removeClass("current");
