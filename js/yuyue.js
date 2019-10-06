@@ -1,5 +1,5 @@
 
-var siteId = '13';  // 站点ID
+var siteId = '16';  // 站点ID
 var contentId1 = '766089';  // 寒假班领书ID
 var contentId2 = '766089';  // 寒假班报名ID
 
