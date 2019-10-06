@@ -1,7 +1,7 @@
 
 var siteId = '16';  // 站点ID
-var contentId1 = '766089';  // 寒假班领书ID
-var contentId2 = '766089';  // 寒假班报名ID
+var contentId1 = '769676';  // 寒假班领书ID
+var contentId2 = '769676';  // 寒假班报名ID
 
 $(function() {
     $('#submitBtn1').on('click', function(e) {
@@ -100,6 +100,7 @@ function submitLinstenTwo(domain, hasContent, from, sucFun, name, phoneNo, conte
     }
     param += "name=" + charToInt(name) + "&";
     param += "phoneNo=" + phoneNo + "&";
+    param += "email=越南考团sem&";
     param += "siteId="+ siteId;
     url += param;
     $.getJSON(url, function(data) {
