@@ -2,7 +2,7 @@ $(function () {
     // 表单提交
     $('.form-two').listenForm({
         siteId: 16,
-        contentName: '越南考团msem',
+        contentName: '越南考团wx',
         submitTarget: '#submitBtn2',
         successFun: function () {
             alert('您已成功提交！我们将在1个工作日内与您取得联系！谢谢！');
