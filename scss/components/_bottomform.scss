@@ -2,7 +2,9 @@
 /*弹框*/
 .form {
     width: 100%;
-    height: px2rem(80px);
+    padding: {
+        bottom: px2rem(20px);
+    }
     background: rgba(0, 0, 0, 0.6);
     position: fixed;
     left: 0;
@@ -27,17 +29,13 @@
         .kuang {
             display: block;
             float: left;
-            width: px2rem(200px);
-            margin-right: px2rem(11px);
-            height: px2rem(50px);
-            border: px2rem(1px) solid #7a7a7a;
+            width: px2rem(335px);
+            margin-right: px2rem(10px);
+            height: px2rem(70px);
+            border: 0;
             font-size: px2rem(22px);
             text-indent: px2rem(12px);
             margin-top: px2rem(15px);
-        }
-
-        .mingzi {
-            margin-left: px2rem(40px);
         }
 
         .select {
@@ -131,8 +129,8 @@
         .sub-btn {
             display: block;
             float: left;
-            width: px2rem(168px);
-            height: px2rem(50px);
+            width: px2rem(308px);
+            height: px2rem(70px);
             border: none;
             background-color: #ffbb29;
             font-size: px2rem(22px);
@@ -150,6 +148,21 @@
             right: px2rem(-40px);
             cursor: pointer;
         }
+
+        .yzmcode {
+            width: px2rem(200px);
+        }
+
+        .codetxt {
+            width: px2rem(150px);
+            margin-right: px2rem(10px);
+            background-color: #355cab;
+        }
+
+        .disabled {
+            opacity: .65;
+        }
+
     }
 }
 

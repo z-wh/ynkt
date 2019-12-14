@@ -4,9 +4,8 @@ $(function () {
         siteId: 13,
         contentName: '越南考团m',
         submitTarget: '#submitBtn2',
-        successFun: function () {
-            alert('您已成功提交！我们将在1个工作日内与您取得联系！谢谢！');
-        }
+        yzmRequired: true,
+        yzmTarget: '#btn-captcha'
     });
 
     // nav点击跳转
