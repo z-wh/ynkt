@@ -16,6 +16,11 @@
     <title>2019年越南雅思考试团-杭州新航道越南考团</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./vendor/swiper.css">
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            window.location = 'http://hz.xhd.cn/m/topic/ynktyd/';
+        }
+    </script>
 </head>
 
 <body>
@@ -307,17 +312,20 @@
 
     <iframe src="http://hz.xhd.cn/topic/footer/footer.html" style="display:block; width:100%; height:313px; background-color:#0068b7; border:0;"></iframe>
 
-    <div class="form form-two" style="display: block;">
+    <div class="form form-two formBox" style="display: block;">
         <div class="wrapper">
             <!-- <img class="ren" src="images/tkr.png"> -->
-            <input class="kuang mingzi" type="text" name="name" placeholder="请输入您的姓名">
-            <input class="kuang" type="text" name="phone" placeholder="请输入您的电话">
+            <input class="kuang" type="text" name="name" placeholder="请输入您的姓名">
+            <input class="kuang phone" type="text" name="phone" placeholder="请输入您的电话">
+            <input type="text" class="kuang yzmcode" name="yzmcode" placeholder="请输入短信验证码">
+            <button id="btn-captcha2" class="sub-btn codetxt">获取验证码</button>
             <button class="sub-btn" id="submitBtn2" type="button">我要报名</button>
         </div>
 
     </div>
 
     <script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
+    <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
     <script src="http://hz.xhd.cn/topic/public/js/listen.js"></script>
     <script src="http://hz.xhd.cn/topic/public/js/sidebar.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
