@@ -307,9 +307,8 @@ a {
   display: none;
   z-index: 9; }
   .form .wrapper {
-    width: 634px;
-    margin: 0 auto;
-    position: relative; }
+    position: relative;
+    text-align: center; }
     .form .wrapper .ren {
       width: 143px;
       height: 186px;
@@ -318,17 +317,33 @@ a {
       top: -117px;
       left: -140px; }
     .form .wrapper .kuang {
-      display: block;
-      float: left;
       width: 200px;
-      margin-right: 11px;
       height: 38px;
       border: 1px solid #7a7a7a;
       font-size: 15px;
       text-indent: 12px;
       margin-top: 15px; }
-    .form .wrapper .mingzi {
-      margin-left: 40px; }
+    .form .wrapper .sub-btn {
+      width: 168px;
+      height: 40px;
+      border: 0;
+      background-color: #ffbb29;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 40px;
+      vertical-align: bottom;
+      color: #fff;
+      margin-top: 15px;
+      cursor: pointer; }
+      .form .wrapper .sub-btn:hover {
+        color: #000;
+        background-color: #ffaf15; }
+    .form .wrapper .codetxt {
+      font-weight: normal;
+      background-color: #00a0e9; }
+      .form .wrapper .codetxt:hover {
+        color: #fff;
+        background-color: #355cab; }
     .form .wrapper .select {
       position: relative;
       width: 151px;
@@ -341,7 +356,7 @@ a {
       background-color: #fff;
       margin-right: 15px;
       margin-top: 15px; }
-      .form .wrapper .select:after {
+      .form .wrapper .select::after {
         position: absolute;
         right: 12px;
         top: 50%;
@@ -362,7 +377,7 @@ a {
         -webkit-transition: all 0.15s ease-in-out;
         -o-transition: all 0.15s ease-in-out;
         transition: all 0.15s ease-in-out; }
-      .form .wrapper .select.open:after {
+      .form .wrapper .select.open::after {
         -webkit-transform: rotate(-135deg);
         -ms-transform: rotate(-135deg);
         -o-transform: rotate(-135deg);
@@ -396,17 +411,6 @@ a {
           background-color: #ffbb29; }
     .form .wrapper .select-one .list {
       top: -116px; }
-    .form .wrapper .sub-btn {
-      display: block;
-      float: left;
-      width: 168px;
-      height: 38px;
-      border: none;
-      background-color: #ffbb29;
-      font-size: 22px;
-      font-weight: bold;
-      color: #fff;
-      margin-top: 15px; }
     .form .wrapper .guanbi {
       width: 30px;
       height: 30px;
@@ -420,10 +424,14 @@ a {
 .form .wrapper input:hover {
   border-color: #ffbb29; }
 
-.form .wrapper .select:hover, .form .wrapper .select:active, .form .wrapper .select.open {
+.form .wrapper .select:hover,
+.form .wrapper .select:active,
+.form .wrapper .select.open {
   border-color: #ffbb29; }
 
-.form .wrapper .select:hover .list, .form .wrapper .select:active .list, .form .wrapper .select.open .list {
+.form .wrapper .select:hover .list,
+.form .wrapper .select:active .list,
+.form .wrapper .select.open .list {
   display: block; }
 
 /*预约成功弹窗*/
